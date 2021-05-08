@@ -1,4 +1,4 @@
-pragma solidity >=0.5.0 <0.6.0;
+pragma solidity >=0.5.0;
 
 import "./zombie_feeding.sol";
 
@@ -12,7 +12,7 @@ contract ZombieHelper is ZombieFeeding {
   }
 
   function withdraw() external onlyOwner {
-    address _owner = owner();
+    address payable _owner = owner();
     _owner.transfer(address(this).balance);
   }
 
