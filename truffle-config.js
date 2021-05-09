@@ -18,6 +18,8 @@
  *
  */
 
+ web3 = require('web3')
+
 // const HDWalletProvider = require('@truffle/hdwallet-provider');
 // const infuraKey = "fj4jll3k.....";
 //
@@ -90,6 +92,12 @@ module.exports = {
 		// 	gas: 4600000,
 		// 	gasPrice: web3.utils.toWei("20", "gwei"),
 		// },
+    rinkeby: { // Provided by Infura, load keys in .env file
+			network_id: "*",
+			provider: "https://rinkeby.infura.io/v3/4a14f3bce2c648dba4940775388039ee",
+			gas: 4600000,
+			gasPrice: 6721975,
+		},
 		// kovan: {
 		// 	network_id: 42,
 		// 	host: "localhost", // parity --chain=kovan
