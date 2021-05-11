@@ -16,7 +16,8 @@
       var userAccount;
 
       function startApp() {
-        var cryptoZombiesAddress = "YOUR_CONTRACT_ADDRESS";
+        // var cryptoZombiesAddress = "0x4e2E840d4343bbdB4057701eCAA4e82FD19c437c"; //https://ropsten.etherscan.io/address/0x4e2E840d4343bbdB4057701eCAA4e82FD19c437c
+        var cryptoZombiesAddress = "0x4101cfc93b9d2a3aadac9ab7c836f2e84f13fb3f";
         cryptoZombies = new web3js.eth.Contract(cryptoZombiesABI, cryptoZombiesAddress);
 
         var accountInterval = setInterval(function() {
